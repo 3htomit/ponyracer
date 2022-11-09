@@ -1,0 +1,7 @@
+<h1 *ngIf="races.length > 0; else noRaces">Races</h1>
+<ng-template #noRaces>
+  <h1>No Races</h1>
+</ng-template>
+<div *ngFor="let race of races">
+  <h2>{{ race.name }}</h2>
+</div>
