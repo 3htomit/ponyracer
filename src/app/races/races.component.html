@@ -3,5 +3,5 @@
   <h1>No Races</h1>
 </ng-template>
 <div *ngFor="let race of races">
-  <h2>{{ race.name }}</h2>
+  <pr-race [raceModel]="race"></pr-race>
 </div>
