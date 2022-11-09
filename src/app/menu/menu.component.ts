@@ -8,9 +8,7 @@ import { Component } from '@angular/core';
 export class MenuComponent {
   navbarCollapsed = true;
 
-  constructor() {}
-
-  toggleNavbar() {
+  toggleNavbar(): void {
     this.navbarCollapsed = !this.navbarCollapsed;
   }
 }

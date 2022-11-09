@@ -9,7 +9,7 @@ import { PonyComponent } from './pony/pony.component';
 import { FromNowPipe } from './from-now.pipe';
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, RacesComponent, RaceComponent, PonyComponent, PonyComponent, FromNowPipe],
+  declarations: [AppComponent, MenuComponent, RacesComponent, RaceComponent, PonyComponent, FromNowPipe],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]
