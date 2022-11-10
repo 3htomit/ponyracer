@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { delay, Observable, of } from 'rxjs';
 import { RaceModel } from './models/race.model';
 
 @Injectable({
@@ -7,8 +8,8 @@ import { RaceModel } from './models/race.model';
 export class RaceService {
   constructor() {}
 
-  list(): Array<RaceModel> {
-    return [
+  list(): Observable<Array<RaceModel>> {
+    return of([
       {
         id: 12,
         name: 'Paris',
@@ -33,6 +34,6 @@ export class RaceService {
         ],
         startInstant: '2020-02-18T08:03:00Z'
       }
-    ];
+    ]).pipe(delay(500));
   }
 }
